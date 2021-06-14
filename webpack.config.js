@@ -51,6 +51,12 @@ module.exports = {
             }
         ]
     },
+    devServer: {
+        open: true,
+        hot: true,
+        port: 8081,
+        historyApiFallback: true,
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',

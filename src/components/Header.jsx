@@ -1,5 +1,6 @@
 /* eslint-disable jsx-quotes */
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/components/Header.scss';
 
 //Statics
@@ -9,7 +10,9 @@ import userIcon from '../assets/static/user-icon.png';
 const Header = () => {
   return (
     <div className="header">
-      <img className="header__img" src={logo} alt="Platzi Video" />
+      <Linnk to="/">
+        <img className="header__img" src={logo} alt="Platzi Video" />
+      </Linnk>
       <div className="header__menu">
         <div className="header__menu--profile">
           <img src={userIcon} alt="" />
