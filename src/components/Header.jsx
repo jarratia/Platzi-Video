@@ -10,9 +10,9 @@ import userIcon from '../assets/static/user-icon.png';
 const Header = () => {
   return (
     <div className="header">
-      <Linnk to="/">
+      <Link to="/">
         <img className="header__img" src={logo} alt="Platzi Video" />
-      </Linnk>
+      </Link>
       <div className="header__menu">
         <div className="header__menu--profile">
           <img src={userIcon} alt="" />
@@ -20,10 +20,10 @@ const Header = () => {
         </div>
         <ul>
           <li>
-            <a href="/">Cuenta</a>
+            <Link to="/">Cuenta</Link>
           </li>
           <li>
-            <a href="/">Cerrar Sesión</a>
+            <Link to="/login">Iniciar sesión</Link>
           </li>
         </ul>
       </div>
